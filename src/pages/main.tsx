@@ -30,7 +30,7 @@ const MainPage = () => {
           Hello, I'm William
         </h1>
         <img
-          className="overflow-visible h-2/5 w-2/5 min-w-[300px] max-w-[400px] rounded-full border border-white drop-shadow-md"
+          className="overflow-visible h-2/5 w-2/5 min-w-[300px] max-w-[400px] rounded-full border-2 border-white drop-shadow-xl"
           src={profileImage}
         />
         <div className="flex flex-row items-center justify-center gap-x-8 w-fit">
@@ -40,7 +40,7 @@ const MainPage = () => {
               faIcon={faIcon}
               url={url}
               target="_blank"
-              className="text-6xl text-light-purple transition ease-in-out duration-300 hover:scale-110"
+              className="text-6xl text-light-purple transition ease-in-out duration-300 hover:scale-110 hover:drop-shadow-xl"
             />
           ))}
         </div>
