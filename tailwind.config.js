@@ -17,6 +17,9 @@ module.exports = {
       colors: {
         'deep-purple': '#312FAD',
         'light-purple': '#B0AEF8',
+      },
+      animation: {
+        'pop-out': 'shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'
       }
     },
   },

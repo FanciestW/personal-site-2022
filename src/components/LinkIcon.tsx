@@ -6,12 +6,14 @@ import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 interface ILinkIcon {
   url: string;
   faIcon: IconDefinition;
+  className?: string;
+  target?: string;
 }
 
 const LinkIcon = (props: ILinkIcon) => {
   return (
-    <a href={props.url}>
-      <FontAwesomeIcon icon={props.faIcon} className="text-5xl" />
+    <a href={props.url} target={props.target}>
+      <FontAwesomeIcon icon={props.faIcon} className={props.className} />
     </a>
   )
 };
@@ -19,6 +21,8 @@ const LinkIcon = (props: ILinkIcon) => {
 LinkIcon.propTypes = {
   url: PropTypes.string.isRequired,
   faIcon: PropTypes.object.isRequired,
+  className: PropTypes.string,
+  target: PropTypes.string,
 }
 
 export default LinkIcon;

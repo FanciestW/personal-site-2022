@@ -6,9 +6,23 @@ import {
   faLinkedin,
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
-import LinkIcon from '../components/LinkIcon';
+import LinkIcon from "../components/LinkIcon";
 
 const MainPage = () => {
+  const LinkIconMapping = [
+    {
+      faIcon: faGithubSquare,
+      url: "https://github.com/FanciestW",
+    },
+    {
+      faIcon: faLinkedin,
+      url: "https://linkedin.com/in/FanciestW",
+    },
+    {
+      faIcon: faFacebookSquare,
+      url: "https://facebook.com/FanciestW",
+    },
+  ];
   return (
     <div className="container h-screen w-full min-h-full min-w-full bg-deep-purple">
       <div className="flex flex-col items-center justify-center gap-y-8 w-full sm:w-50">
@@ -21,10 +35,14 @@ const MainPage = () => {
         />
         <div className="flex flex-row items-center justify-center gap-x-8 w-fit">
           {/* TODO::Clean up icons, potentially make into component */}
-          <FontAwesomeIcon icon={faGithubSquare} className="text-5xl" />
-          <FontAwesomeIcon icon={faLinkedin} className="text-5xl" />
-          <FontAwesomeIcon icon={faFacebookSquare} className="text-5xl" />
-          <LinkIcon url="https://github.com/FanciestW" faIcon={faGithubSquare} />
+          {LinkIconMapping.map(({ faIcon, url }) => (
+            <LinkIcon
+              faIcon={faIcon}
+              url={url}
+              target="_blank"
+              className="text-6xl text-light-purple transition ease-in-out duration-300 hover:scale-110"
+            />
+          ))}
         </div>
       </div>
     </div>
