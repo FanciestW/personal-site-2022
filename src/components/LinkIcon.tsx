@@ -12,7 +12,7 @@ interface ILinkIcon {
 
 const LinkIcon = (props: ILinkIcon) => {
   return (
-    <a href={props.url} target={props.target}>
+    <a href={props.url} target={props.target} rel={props.target === "_blank" ? "noopener noreferrer" : undefined}>
       <FontAwesomeIcon icon={props.faIcon} className={props.className} />
     </a>
   )
