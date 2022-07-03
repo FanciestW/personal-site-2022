@@ -6,6 +6,7 @@ import {
   faLinkedin,
   faFacebookSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import LinkIcon from '../components/LinkIcon';
 
 const MainPage = () => {
   return (
@@ -23,6 +24,7 @@ const MainPage = () => {
           <FontAwesomeIcon icon={faGithubSquare} className="text-5xl" />
           <FontAwesomeIcon icon={faLinkedin} className="text-5xl" />
           <FontAwesomeIcon icon={faFacebookSquare} className="text-5xl" />
+          <LinkIcon url="https://github.com/FanciestW" faIcon={faGithubSquare} />
         </div>
       </div>
     </div>
