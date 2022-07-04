@@ -1,38 +1,40 @@
 /** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require("tailwindcss/defaultTheme");
 const plugin = require("tailwindcss/plugin");
 
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
+        sans: ["Roboto", ...defaultTheme.fontFamily.sans],
       },
       textShadow: {
-        DEFAULT: '0px 4px 4px var(--tw-shadow-color)',
+        DEFAULT: "0px 4px 4px var(--tw-shadow-color)",
       },
       colors: {
-        'deep-purple': '#312FAD',
-        'light-purple': '#B0AEF8',
+        "deep-purple": "#312FAD",
+        "light-purple": "#B0AEF8",
       },
       animation: {
-        'pop-out': 'shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'
-      }
+        "pop-out":
+          "shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
+      },
+      backgroundImage: {
+        "intro-wave-svg": `url(/static/f74765b31cc2881d4533cf1a143d6089/intro_wave.svg)`,
+      },
     },
   },
   plugins: [
-    plugin(function({ matchUtilities, theme}) {
+    plugin(function ({ matchUtilities, theme }) {
       matchUtilities(
         {
-          'text-shadow': (value) => ({
+          "text-shadow": (value) => ({
             textShadow: value,
           }),
         },
-        { values: theme('textShadow') }
-      )
+        { values: theme("textShadow") }
+      );
     }),
   ],
-}
+};

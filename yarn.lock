@@ -8133,6 +8133,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gatsby-source-filesystem@npm:^4.17.0":
+  version: 4.17.0
+  resolution: "gatsby-source-filesystem@npm:4.17.0"
+  dependencies:
+    "@babel/runtime": ^7.15.4
+    chokidar: ^3.5.2
+    file-type: ^16.5.3
+    fs-extra: ^10.1.0
+    gatsby-core-utils: ^3.17.0
+    got: ^9.6.0
+    md5-file: ^5.0.0
+    mime: ^2.5.2
+    pretty-bytes: ^5.4.1
+    progress: ^2.0.3
+    valid-url: ^1.0.9
+    xstate: ^4.26.1
+  peerDependencies:
+    gatsby: ^4.0.0-next
+  checksum: 42326b9a8798b4cf758569ae90e46e16988962c3f0dab379a06dbebb9863032244d52132653ae37ef1bf9cc4abb69ca10055d2a85ad5c03e265a3f3b1f91ac80
+  languageName: node
+  linkType: hard
+
 "gatsby-telemetry@npm:^3.17.0":
   version: 3.17.0
   resolution: "gatsby-telemetry@npm:3.17.0"
@@ -11711,6 +11733,7 @@ __metadata:
     autoprefixer: ^10.4.7
     gatsby: ^4.13.1
     gatsby-plugin-postcss: ^5.17.0
+    gatsby-source-filesystem: ^4.17.0
     postcss: ^8.4.14
     prop-types: ^15.8.1
     react: ^17.0.1
@@ -12300,6 +12323,13 @@ __metadata:
   version: 2.0.0
   resolution: "prepend-http@npm:2.0.0"
   checksum: 7694a9525405447662c1ffd352fcb41b6410c705b739b6f4e3a3e21cf5fdede8377890088e8934436b8b17ba55365a615f153960f30877bf0d0392f9e93503ea
+  languageName: node
+  linkType: hard
+
+"pretty-bytes@npm:^5.4.1":
+  version: 5.6.0
+  resolution: "pretty-bytes@npm:5.6.0"
+  checksum: 9c082500d1e93434b5b291bd651662936b8bd6204ec9fa17d563116a192d6d86b98f6d328526b4e8d783c07d5499e2614a807520249692da9ec81564b2f439cd
   languageName: node
   linkType: hard
 
@@ -14708,7 +14738,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"valid-url@npm:1.0.9":
+"valid-url@npm:1.0.9, valid-url@npm:^1.0.9":
   version: 1.0.9
   resolution: "valid-url@npm:1.0.9"
   checksum: 3ecb030559404441c2cf104cbabab8770efb0f36d117db03d1081052ef133015a68806148ce954bb4dd0b5c42c14b709a88783c93d66b0916cb67ba771c98702
@@ -15088,7 +15118,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"xstate@npm:^4.26.0":
+"xstate@npm:^4.26.0, xstate@npm:^4.26.1":
   version: 4.32.1
   resolution: "xstate@npm:4.32.1"
   checksum: c16298b2b3dab7689da99d5b1e5128d2ca3bf381f37c8cb95e4af83bb1044b9251629fc00758f7f31785a72c2ddddd26f602b2801e6068cd78373b7f6dd6c28b

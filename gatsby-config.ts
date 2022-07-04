@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from "gatsby"
+import type { GatsbyConfig } from "gatsby";
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -6,8 +6,15 @@ const config: GatsbyConfig = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
-    'gatsby-plugin-postcss',
+    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `assets`,
+        path: `${__dirname}/src/assets/`,
+      },
+    },
   ],
-}
+};
 
-export default config
+export default config;
