@@ -20,9 +20,6 @@ module.exports = {
         "pop-out":
           "shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
-      backgroundImage: {
-        "intro-wave-svg": `url(/static/f74765b31cc2881d4533cf1a143d6089/intro_wave.svg)`,
-      },
     },
   },
   plugins: [

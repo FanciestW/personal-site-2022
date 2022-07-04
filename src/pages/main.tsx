@@ -1,13 +1,14 @@
 import * as React from "react";
 import IntroCard from "../components/IntroCard";
+import introWaveSvg from "../assets/intro_wave.svg";
 
 const MainPage = () => {
   return (
     <div className="bg-deep-purple">
-      <div className="container h-screen w-full min-h-fit min-w-full">
+      <div className="flex h-fit w-full min-h-screen min-w-full items-center justify-center">
+        <img src={introWaveSvg} className="absolute z-0 w-screen bg-transparent bottom-[20vh]" />
         <IntroCard />
       </div>
-      <div className="relative w-screen h-screen bg-transparent bg-intro-wave-svg bg-relative bg-[right_0_bottom_calc(25vh)] bg-contain bg-no-repeat"></div>
     </div>
   );
 };
