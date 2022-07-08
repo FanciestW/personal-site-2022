@@ -37,7 +37,7 @@ const IntroCard = () => {
             faIcon={faIcon}
             url={url}
             target="_blank"
-            className="text-6xl mix-blend-overlay text-light-purple transition ease-in-out duration-300 hover:scale-110 hover:drop-shadow-xl"
+            className="text-6xl text-blended-text mix-blend-difference transition ease-in-out duration-300 hover:scale-110 hover:drop-shadow-xl"
           />
         ))}
       </div>

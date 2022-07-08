@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         "deep-purple": "#312FAD",
         "light-purple": "#B0AEF8",
+        "blended-text": "rgb(238,238,41)",
       },
       animation: {
         "pop-out":
