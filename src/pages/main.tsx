@@ -42,7 +42,7 @@ const MainPage = () => {
               faIcon={faIcon}
               url={url}
               target="_blank"
-              className="text-6xl transition ease-in-out duration-300 hover:scale-110 hover:drop-shadow-xl"
+              className="text-6xl transition ease-in-out duration-300 hover:scale-110 hover:drop-shadow-xl visited:text-blended-text focus:outline-none focus-visible:outline-none"
             />
           ))}
         </div>
