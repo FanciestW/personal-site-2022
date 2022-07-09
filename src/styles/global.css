@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  
+  /* Hides scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Hides scrollbar */
+html::-webkit-scrollbar {
+  display: none;
+}
