@@ -26,7 +26,15 @@ const MainPage = () => {
   ];
   return (
     <div>
-      <div className="mix-blend-overlay isolate bg-deep-purple bg-intro-wave-svg bg-no-repeat bg-relative bg-[right_0_bottom_0] bg-contain">
+      <div className="container fixed top-0 right-0">
+        <div className="flex flex-row justify-end gap-x-12 px-10 py-8 z-0 uppercase text-base text-blended-text">
+          <a href="#home">Home</a>
+          <a href="#about-me">About Me</a>
+          <a href="#work">Work History</a>
+          <a href="#contact">Contact Info</a>
+        </div>
+      </div>
+      <div className="mix-blend-difference bg-deep-purple bg-intro-wave-svg bg-no-repeat bg-relative bg-[right_0_bottom_0] bg-contain">
         <div className="flex h-fit w-full min-h-screen min-w-full items-center justify-center">
           <div className="absolute flex flex-col items-center justify-center gap-y-8 w-full h-full sm:w-50">
             <h1 className="font-sans font-light text-blended-text mix-blend-difference text-5xl self-stretch leading-10 text-center items-center text-shadow shadow-black/25">
@@ -49,24 +57,27 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center lg:items-center bg-light-purple h-fit min-h-screen w-full">
+      <div className="mix-blend-difference flex justify-center lg:items-center bg-light-purple h-fit min-h-screen w-full">
         <div className="flex flex-col lg:flex-row justify-center flex-nowrap gap-12 h-screen w-9/12 m-h-fit items-center mix-blend-difference text-blended-text py-10 sm:py-0">
           <div className="whitespace-nowrap font-sans text-3xl font-normal uppercase">
             About Me
           </div>
           <div className="shrink font-san text-lg md:text-xl lg:text-2xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. At
-            imperdiet dui accumsan sit amet nulla facilisi morbi. Sit amet purus
-            gravida quis blandit turpis cursus in hac. Posuere lorem ipsum dolor
-            sit amet. Elit at imperdiet dui accumsan sit amet.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget
+            in odio arcu condimentum risus. Mattis est sem eget mattis tortor
+            risus quis. Est quis facilisis sit purus, quis elementum vitae non
+            a.
             <br />
             <br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. At
-            imperdiet dui accumsan sit amet nulla facilisi morbi. Sit amet purus
-            gravida quis blandit turpis cursus in hac. Posuere lorem ipsum dolor
-            sit amet. Elit at imperdiet dui accumsan sit amet.
+            Sapien blandit nulla elementum non. Nibh tristique luctus placerat
+            tortor. Duis venenatis elementum volutpat dignissim. Sed sagittis,
+            pellentesque in egestas. Diam aenean blandit sed cras tellus nec
+            nisl nunc.
+            <br />
+            <br />
+            Elementum tempor tincidunt mus eleifend praesent hac vel, dictumst.
+            Est nunc tempor hac aliquet amet, nisl, ut. Luctus enim porttitor id
+            pharetra, vulputate.
           </div>
         </div>
       </div>
