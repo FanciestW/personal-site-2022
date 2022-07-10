@@ -58,7 +58,7 @@ const MainPage = () => {
         </div>
       </div>
       <div id="about-me" className="snap-start snap-always flex justify-center lg:items-center bg-light-purple h-fit min-h-screen w-full">
-        <div className="flex flex-col lg:flex-row justify-center flex-nowrap gap-12 h-screen w-9/12 m-h-fit items-center mix-blend-difference text-blended-text py-10 sm:py-0">
+        <div className="flex flex-col lg:flex-row justify-center flex-nowrap gap-12 h-screen  min-h-fit w-9/12 max-w-screen-lg items-center mix-blend-difference text-blended-text py-10 sm:py-0">
           <div className="whitespace-nowrap font-sans text-3xl font-normal uppercase">
             About Me
           </div>
