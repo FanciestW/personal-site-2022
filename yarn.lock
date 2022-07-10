@@ -3852,6 +3852,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-scroll@npm:^1":
+  version: 1.8.3
+  resolution: "@types/react-scroll@npm:1.8.3"
+  dependencies:
+    "@types/react": "*"
+  checksum: c3b0928b2a0bff92bc9c52de4c95c448f0569d01828fb80c135cf183819743dfbf859a57b60debc67501d7f64f7e1694c992e5d09898281c987869dd0ceace94
+  languageName: node
+  linkType: hard
+
 "@types/react-transition-group@npm:^4.4.4":
   version: 4.4.5
   resolution: "@types/react-transition-group@npm:4.4.5"
@@ -10222,6 +10231,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lodash.throttle@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "lodash.throttle@npm:4.1.1"
+  checksum: 129c0a28cee48b348aef146f638ef8a8b197944d4e9ec26c1890c19d9bf5a5690fe11b655c77a4551268819b32d27f4206343e30c78961f60b561b8608c8c805
+  languageName: node
+  linkType: hard
+
 "lodash.truncate@npm:^4.4.2":
   version: 4.4.2
   resolution: "lodash.truncate@npm:4.4.2"
@@ -11730,6 +11746,7 @@ __metadata:
     "@types/prop-types": ^15.7.5
     "@types/react": ^18.0.14
     "@types/react-dom": ^18.0.5
+    "@types/react-scroll": ^1
     autoprefixer: ^10.4.7
     gatsby: ^4.13.1
     gatsby-plugin-postcss: ^5.17.0
@@ -11738,6 +11755,7 @@ __metadata:
     prop-types: ^15.8.1
     react: ^17.0.1
     react-dom: ^17.0.1
+    react-scroll: ^1.8.7
     tailwindcss: ^3.1.4
     typescript: ^4.6.4
   languageName: unknown
@@ -12668,6 +12686,19 @@ __metadata:
   version: 0.9.0
   resolution: "react-refresh@npm:0.9.0"
   checksum: 6440146176f19402ffb7d66f317e40b1c42c88579b4d439b49021e38be6307c642da3e8732a72e6997b6bb1127db0da92f4aa433da4313ce8ebad0c1efa2ed4a
+  languageName: node
+  linkType: hard
+
+"react-scroll@npm:^1.8.7":
+  version: 1.8.7
+  resolution: "react-scroll@npm:1.8.7"
+  dependencies:
+    lodash.throttle: ^4.1.1
+    prop-types: ^15.7.2
+  peerDependencies:
+    react: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0
+  checksum: 37714995f120bcc781e4a445c0e9bd4b7f673674c84e851a96493878fe804799e1ff8ce3ead4c8aa1b5eb3bb039e043ff029607196d269a75c39d9257a372e7f
   languageName: node
   linkType: hard
 

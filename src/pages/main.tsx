@@ -1,5 +1,6 @@
 import * as React from "react";
 import IntroCard from "../components/IntroCard";
+import { Link } from "react-scroll";
 
 import profileImage from "../images/profile_pic.jpg";
 import {
@@ -28,13 +29,38 @@ const MainPage = () => {
     <div className="select-none">
       <div className="container fixed top-0 right-0 z-50 mix-blend-difference">
         <div className="flex flex-row justify-end gap-x-12 px-10 py-8 z-0 uppercase text-base text-blended-text">
-          <a href="#home">Home</a>
-          <a href="#about-me">About Me</a>
-          <a href="#work">Work History</a>
-          <a href="#contact">Contact Info</a>
+          <Link smooth spy hashSpy delay={0} activeClass="underline" to="home">
+            Home
+          </Link>
+          <Link
+            smooth
+            spy
+            hashSpy
+            delay={0}
+            activeClass="underline"
+            to="about-me"
+          >
+            About Me
+          </Link>
+          <Link smooth spy hashSpy delay={0} activeClass="underline" to="work">
+            Work History
+          </Link>
+          <Link
+            smooth
+            spy
+            hashSpy
+            delay={0}
+            activeClass="underline"
+            to="contact"
+          >
+            Contact Info
+          </Link>
         </div>
       </div>
-      <div id="home" className="snap-start snap-always bg-deep-purple bg-intro-wave-svg bg-no-repeat bg-relative bg-[right_0_bottom_0] bg-contain">
+      <div
+        id="home"
+        className="snap-start snap-always bg-deep-purple bg-intro-wave-svg bg-no-repeat bg-relative bg-[right_0_bottom_0] bg-contain"
+      >
         <div className="flex h-fit w-full min-h-screen min-w-full items-center justify-center">
           <div className="absolute flex flex-col items-center justify-center gap-y-8 w-full h-full sm:w-50">
             <h1 className="font-sans font-light text-blended-text mix-blend-difference text-5xl self-stretch leading-10 text-center items-center text-shadow shadow-black/25">
@@ -57,7 +83,10 @@ const MainPage = () => {
           </div>
         </div>
       </div>
-      <div id="about-me" className="snap-start snap-always flex justify-center lg:items-center bg-light-purple h-fit min-h-screen w-full">
+      <div
+        id="about-me"
+        className="snap-start snap-always flex justify-center lg:items-center bg-light-purple h-fit min-h-screen w-full"
+      >
         <div className="flex flex-col lg:flex-row justify-center flex-nowrap gap-12 h-screen  min-h-fit w-9/12 max-w-screen-lg items-center mix-blend-difference text-blended-text py-10 sm:py-0">
           <div className="whitespace-nowrap font-sans text-3xl font-normal uppercase">
             About Me
