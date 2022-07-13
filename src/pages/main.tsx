@@ -41,6 +41,10 @@ const MainPage = () => {
       >
         <AboutMe />
       </div>
+      <div
+        id="work"
+        className="snap-start snap-always flex justify-center lg:items-center bg-deep-purple h-fit min-h-screen w-full"
+      ></div>
     </div>
   );
 };
