@@ -10,20 +10,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 const MainPage = () => {
-  const LinkIconMapping = [
-    {
-      faIcon: faGithubSquare,
-      url: "https://github.com/FanciestW",
-    },
-    {
-      faIcon: faLinkedin,
-      url: "https://linkedin.com/in/FanciestW",
-    },
-    {
-      faIcon: faFacebookSquare,
-      url: "https://facebook.com/FanciestW",
-    },
-  ];
   return (
     <div className="select-none">
       <NavBar />
