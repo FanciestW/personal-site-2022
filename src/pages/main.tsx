@@ -3,12 +3,6 @@ import IntroCard from "../components/IntroCard";
 import NavBar from "../components/NavBar";
 import AboutMe from "../components/AboutMe";
 
-import {
-  faGithubSquare,
-  faLinkedin,
-  faFacebookSquare,
-} from "@fortawesome/free-brands-svg-icons";
-
 const MainPage = () => {
   return (
     <div className="select-none">
