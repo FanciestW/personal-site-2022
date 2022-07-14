@@ -9,7 +9,7 @@ const MainPage = () => {
       <NavBar />
       <div
         id="home"
-        className="snap-start snap-always bg-deep-purple bg-intro-wave-svg bg-no-repeat bg-relative bg-[right_0_bottom_0] bg-contain"
+        className="snap-start snap-always bg-deep-purple bg-wave-1-svg bg-no-repeat bg-relative bg-[right_0_bottom_0] bg-contain"
       >
         <div className="flex h-fit w-full min-h-screen min-w-full items-center justify-center">
           <IntroCard />
@@ -23,7 +23,7 @@ const MainPage = () => {
       </div>
       <div
         id="work"
-        className="snap-start snap-always flex justify-center lg:items-center bg-deep-purple h-fit min-h-screen w-full"
+        className="snap-start snap-always flex justify-center lg:items-center bg-deep-purple h-fit min-h-screen w-full bg-wave-2-svg bg-no-repeat bg-relative bg-[right_0_top_0] bg-contain"
       ></div>
     </div>
   );
