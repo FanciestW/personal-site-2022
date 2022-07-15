@@ -24,7 +24,13 @@ const MainPage = () => {
       <div
         id="work"
         className="snap-start snap-always flex justify-center lg:items-center bg-deep-purple h-fit min-h-screen w-full bg-wave-2-svg bg-no-repeat bg-relative bg-[right_0_top_0] bg-contain"
-      ></div>
+      >
+        <div className="min-h-screen mt-[calc(10vw)]">
+          <p className="text-3xl text-blended-text uppercase top-0 mt-10 mix-blend-difference">
+            Work History
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
