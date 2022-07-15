@@ -5,17 +5,10 @@ const NavBar = () => {
   return (
     <div className="container fixed top-0 right-0 z-50 mix-blend-difference">
       <div className="flex flex-row justify-end gap-x-12 px-10 py-8 z-0 uppercase text-base text-blended-text">
-        <Link
-          smooth
-          spy
-          hashSpy
-          activeClass="underline underline-offset-8"
-          to="home"
-        >
+        <Link spy hashSpy activeClass="underline underline-offset-8" to="home">
           Home
         </Link>
         <Link
-          smooth
           spy
           hashSpy
           activeClass="underline underline-offset-8"
@@ -23,17 +16,10 @@ const NavBar = () => {
         >
           About Me
         </Link>
-        <Link
-          smooth
-          spy
-          hashSpy
-          activeClass="underline underline-offset-8"
-          to="work"
-        >
+        <Link spy hashSpy activeClass="underline underline-offset-8" to="work">
           Work History
         </Link>
         <Link
-          smooth
           spy
           hashSpy
           activeClass="underline underline-offset-8"
