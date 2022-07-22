@@ -2,6 +2,7 @@ import * as React from "react";
 import IntroCard from "../components/IntroCard";
 import NavBar from "../components/NavBar";
 import AboutMe from "../components/AboutMe";
+import Timeline from "../components/Timeline";
 
 const IndexPage = () => {
   return (
@@ -30,6 +31,7 @@ const IndexPage = () => {
             Work History
           </p>
           {/* TODO:: https://www.freecodecamp.org/news/how-to-create-a-timeline-component-with-react-1b216f23d3d4/ */}
+          <Timeline />
         </div>
       </div>
     </div>
