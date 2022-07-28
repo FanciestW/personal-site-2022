@@ -24,7 +24,7 @@ html::-webkit-scrollbar {
 }
 
 .timeline-container::after {
-  background-color: #e17b77;
+  background-color: #B0AEF8;
   content: '';
   position: absolute;
   left: calc(50% - 2px);
@@ -127,7 +127,7 @@ html::-webkit-scrollbar {
 
 .timeline-item-content .circle {
   background-color: #fff;
-  border: 3px solid #e17b77;
+  border: 3px solid #B0AEF8;
   border-radius: 50%;
   position: absolute;
   top: calc(50% - 10px);

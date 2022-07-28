@@ -1,12 +1,35 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 
-const TimelineItem = ({ data }) => (
+interface ITimelineCategory {
+  tag: string;
+  color: string;
+}
+
+interface ITimelineLink {
+  text: string;
+  url: string;
+}
+
+interface ITimelineItemData {
+  category: ITimelineCategory;
+  title: string;
+  date: string;
+  text: string;
+  link: ITimelineLink;
+}
+
+interface IData {
+  data: ITimelineItemData;
+}
+
+const TimelineItem = ({ data }: IData) => (
   <div className="timeline-item flex justify-end my-2.5 pr-8 relative w-6/12">
     <div className="timeline-item-content">
       <span className="tag" style={{ background: data.category.color }}>
         {data.category.tag}
       </span>
+      <p>{data.title}</p>
       <time>{data.date}</time>
       <p>{data.text}</p>
       {data.link && (

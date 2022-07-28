@@ -31,7 +31,7 @@ const timelineData = [
 const Timeline = () => {
   if (timelineData.length > 0) {
     return (
-      <div className="timeline-container">
+      <div className="timeline-container after:bg-color-blended-text">
         {timelineData.map((data, idx) => (
           <TimelineItem data={data} key={idx} />
         ))}
