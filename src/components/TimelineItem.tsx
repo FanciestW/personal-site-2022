@@ -14,8 +14,9 @@ interface ITimelineLink {
 interface ITimelineItemData {
   category: ITimelineCategory;
   title: string;
+  subtitle: string;
   date: string;
-  text: string;
+  description: string;
   link: ITimelineLink;
 }
 
@@ -30,8 +31,9 @@ const TimelineItem = ({ data }: IData) => (
         {data.category.tag}
       </span>
       <p>{data.title}</p>
+      <p>{data.subtitle}</p>
       <time>{data.date}</time>
-      <p>{data.text}</p>
+      <p>{data.description}</p>
       {data.link && (
         <a href={data.link.url} target="_blank" rel="noopener noreferrer">
           {data.link.text}

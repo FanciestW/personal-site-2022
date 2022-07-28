@@ -3,8 +3,10 @@ import TimelineItem from "./TimelineItem";
 
 const timelineData = [
   {
-    text: "Wrote my first blog post ever on Medium",
+    title: "Capital One",
+    subtitle: "Software Engineer",
     date: "March 03 2017",
+    description: "Wrote my first blog post ever on Medium",
     category: {
       tag: "medium",
       color: "#018f69",
@@ -15,8 +17,10 @@ const timelineData = [
     },
   },
   {
-    text: "Wrote my first blog post ever on Medium",
+    title: "University of New Haven",
+    subtitle: "Graduate Computer Science Teaching Assistant",
     date: "March 03 2017",
+    description: "Wrote my first blog post ever on Medium",
     category: {
       tag: "medium",
       color: "#018f69",
@@ -31,7 +35,7 @@ const timelineData = [
 const Timeline = () => {
   if (timelineData.length > 0) {
     return (
-      <div className="timeline-container after:bg-color-blended-text">
+      <div className="timeline-container">
         {timelineData.map((data, idx) => (
           <TimelineItem data={data} key={idx} />
         ))}
