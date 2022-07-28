@@ -30,10 +30,10 @@ const TimelineItem = ({ data }: IData) => (
       <span className="tag" style={{ background: data.category.color }}>
         {data.category.tag}
       </span>
-      <p>{data.title}</p>
-      <p>{data.subtitle}</p>
-      <time>{data.date}</time>
-      <p>{data.description}</p>
+      <p className="w-full text-xl">{data.title}</p>
+      <p className="w-full text-lg my-[5px]">{data.subtitle}</p>
+      <time className="w-6/12 text-lg my-[5px]">{data.date}</time>
+      <p className="w-full text-md my-[5px]">{data.description}</p>
       {data.link && (
         <a href={data.link.url} target="_blank" rel="noopener noreferrer">
           {data.link.text}

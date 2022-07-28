@@ -6,7 +6,7 @@ const timelineData = [
     title: "Capital One",
     subtitle: "Software Engineer",
     date: "March 03 2017",
-    description: "Wrote my first blog post ever on Medium",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
     category: {
       tag: "medium",
       color: "#018f69",
@@ -20,7 +20,7 @@ const timelineData = [
     title: "University of New Haven",
     subtitle: "Graduate Computer Science Teaching Assistant",
     date: "March 03 2017",
-    description: "Wrote my first blog post ever on Medium",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
     category: {
       tag: "medium",
       color: "#018f69",
