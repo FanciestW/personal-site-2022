@@ -26,14 +26,14 @@ interface IData {
 
 const TimelineItem = ({ data }: IData) => (
   <div className="timeline-item flex justify-end my-2.5 pr-8 relative w-6/12">
-    <div className="timeline-item-content text-light-purple">
+    <div className="timeline-item-content text-light-purple font-sans">
       <span className="tag" style={{ background: data.category.color }}>
         {data.category.tag}
       </span>
-      <p className="w-full text-xl">{data.title}</p>
-      <p className="w-full text-lg my-[5px]">{data.subtitle}</p>
-      <time className="w-6/12 text-lg my-[5px]">{data.date}</time>
-      <p className="w-full text-md my-[5px]">{data.description}</p>
+      <p className="w-full text-lg">{data.title}</p>
+      <p className="w-full text-md font-light my-0">{data.subtitle}</p>
+      <time className="w-full text-sm italic font-light my-0">{data.date}</time>
+      <p className="w-full text-sm my-0">{data.description}</p>
       {data.link && (
         <a href={data.link.url} target="_blank" rel="noopener noreferrer">
           {data.link.text}
