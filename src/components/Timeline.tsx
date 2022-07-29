@@ -21,10 +21,6 @@ const timelineData = [
     subtitle: "Graduate Computer Science Teaching Assistant",
     date: "(September 2019 - December 2020)",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
-    category: {
-      tag: "medium",
-      color: "#018f69",
-    },
     link: {
       url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
       text: "Read more",
@@ -35,10 +31,6 @@ const timelineData = [
     subtitle: "Software Engineer Intern",
     date: "(June 2020 - August 2020)",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
-    category: {
-      tag: "medium",
-      color: "#018f69",
-    },
     link: {
       url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
       text: "Read more",
@@ -49,10 +41,6 @@ const timelineData = [
     subtitle: "Lead Software Engineer",
     date: "(January 2019 - October 2019)",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
-    category: {
-      tag: "medium",
-      color: "#018f69",
-    },
     link: {
       url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
       text: "Read more",
