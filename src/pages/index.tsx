@@ -33,6 +33,11 @@ const IndexPage = () => {
           <Timeline />
         </div>
       </div>
+      <div
+        id="contact"
+        className="snap-start snap-always flex justify-center lg:items-center bg-light-purple h-fit min-h-screen w-full bg-wave-3-svg bg-no-repeat bg-relative bg-[right_0_top_0] bg-contain"
+      >
+      </div>
     </div>
   );
 };

@@ -22,8 +22,9 @@ module.exports = {
           "shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both",
       },
       backgroundImage: {
-        "wave-1-svg": `url(/assets/wave_1.svg)`,
+        "wave-1-svg": "url(/assets/wave_1.svg)",
         "wave-2-svg": "url(/assets/wave_2.svg)",
+        "wave-3-svg": "url(/assets/wave_3.svg)",
       },
     },
   },
