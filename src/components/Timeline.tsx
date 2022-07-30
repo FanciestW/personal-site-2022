@@ -7,44 +7,54 @@ const timelineData = [
     subtitle: "Software Engineer",
     date: "(February 2020 - present)",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
-    category: {
-      tag: "medium",
-      color: "#018f69",
-    },
-    link: {
-      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
-      text: "Read more",
-    },
   },
   {
     title: "University of New Haven",
     subtitle: "Graduate Computer Science Teaching Assistant",
     date: "(September 2019 - December 2020)",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
-    link: {
-      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
-      text: "Read more",
-    },
   },
   {
     title: "Capital One",
     subtitle: "Software Engineer Intern",
     date: "(June 2020 - August 2020)",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
-    link: {
-      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
-      text: "Read more",
-    },
   },
   {
     title: "SoluTech Inc.",
     subtitle: "Lead Software Engineer",
-    date: "(January 2019 - October 2019)",
+    date: "(January 2017 - October 2019)",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
-    link: {
-      url: "https://medium.com/@popflorin1705/javascript-coding-challenge-1-6d9c712963d2",
-      text: "Read more",
-    },
+  },
+  {
+    title: "Capital One",
+    subtitle: "Software Engineer Intern",
+    date: "(June 2019 - August 2019)",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
+  },
+  {
+    title: "Conferdense Inc.",
+    subtitle: "Android Developer",
+    date: "(March 2018 - May 2019)",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
+  },
+  {
+    title: "The MITRE Corporation",
+    subtitle: "Software Engineering Intern",
+    date: "(June 2018 - August 2018)",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
+  },
+  {
+    title: "Abbott Jewelry Systems Inc.",
+    subtitle: "Software Engineer",
+    date: "(October 2013 - May 2018)",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
+  },
+  {
+    title: "Self Employed",
+    subtitle: "IT Technician",
+    date: "(August 2015 - August 2017)",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in odio arcu condimentum risus Mattis est sem eget mattis tortor risus quis. Est quis facilisis sit purus, quis elementum vitae non a.",
   },
 ];
 

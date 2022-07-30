@@ -6,7 +6,7 @@ const AboutMe = () => {
       <div className="whitespace-nowrap font-sans text-3xl font-normal uppercase">
         About Me
       </div>
-      <div className="shrink font-san text-lg md:text-xl lg:text-2xl">
+      <div className="shrink font-san font-thin text-lg md:text-xl lg:text-2xl">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget in
         odio arcu condimentum risus. Mattis est sem eget mattis tortor risus
         quis. Est quis facilisis sit purus, quis elementum vitae non a.
