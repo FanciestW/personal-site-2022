@@ -30,7 +30,6 @@ const IndexPage = () => {
           <p className="text-3xl text-blended-text text-center uppercase top-0 mt-10 mix-blend-difference">
             Work History
           </p>
-          {/* TODO:: https://www.freecodecamp.org/news/how-to-create-a-timeline-component-with-react-1b216f23d3d4/ */}
           <Timeline />
         </div>
       </div>
