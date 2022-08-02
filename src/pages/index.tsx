@@ -68,6 +68,7 @@ const IndexPage = () => {
         className="snap-start snap-always flex flex-col flex-start gap-12 items-center bg-light-purple h-fit min-h-screen w-full  bg-no-repeat bg-relative bg-[right_0_top_0] bg-contain"
       >
         <img src="/assets/wave_3.svg" className="w-full"></img>
+        {/* TODO::Grow the content below so that its center in the rest of the contact page. */}
         <div className="flex flex-col md:flex-row justify-center flex-nowrap gap-8 min-h-fit w-9/12 max-w-screen-lg items-center mix-blend-difference text-blended-text py-10 sm:py-0">
           <div className="whitespace-nowrap font-sans text-3xl font-normal uppercase">
             Get In Touch
