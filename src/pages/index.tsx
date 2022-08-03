@@ -12,8 +12,8 @@ const IndexPage = () => {
   const contactInfoList = [
     {
       icon: faPhone,
-      text: "(917) 434-8023",
-      link: "tel:9174348023",
+      text: "(917) 444-5340",
+      link: "tel:9174445340",
     },
     {
       icon: faAt,
