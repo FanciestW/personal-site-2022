@@ -37,7 +37,7 @@ const ContactInfo = () => {
         <div className="whitespace-nowrap font-sans text-3xl font-normal uppercase">
           Get In Touch
         </div>
-        <div className="hidden md:block h-[150px] border-l-2 border-solid border-blended-text"></div>
+        <div className="hidden md:block h-[200px] border-l-2 border-solid border-blended-text" />
         <div className="flex flex-col gap-4 shrink font-san font-thin text-lg md:text-xl lg:text-2xl">
           {contactInfoList.map((contactInfo) => (
             <div className="flex flex-row gap-4 items-center">
