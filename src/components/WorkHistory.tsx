@@ -12,7 +12,6 @@ const WorkHistory = () => {
           Work History
         </p>
         <Timeline />
-        <div className="w-[80%] border-b-2 border-solid border-light-purple" />
       </div>
     </div>
   );
