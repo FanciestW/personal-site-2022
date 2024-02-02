@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Link } from "react-scroll";
+import { faHamburger } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 interface ILink {
   href: string;
@@ -44,7 +46,9 @@ const NavBar = () => {
         </div>
       </div>
       <div className="container fixed top-0 right-0 z-50 w-full mix-blend-difference block sm:hidden">
-        Mobile Nav Menu
+        <div className="flex flex-row justify-end gap-x-12 p-5 z-0 uppercase text-base text-blended-text">
+          <FontAwesomeIcon icon={faHamburger} className="text-3xl" />
+        </div>
       </div>
     </>
   );
