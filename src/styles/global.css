@@ -21,8 +21,8 @@ a { color: inherit; text-decoration: none; }
 ::selection { background: var(--violet); color: white; }
 
 .nav { height: 88px; max-width: var(--max); margin: auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); position: relative; z-index: 20; }
-.brand { font-size: 23px; font-weight: 700; letter-spacing: -1px; }
-.brand span { color: var(--mint); }
+.brand { display: inline-flex; align-items: center; }
+.brand img { display: block; width: 84px; height: auto; }
 .nav-links { display: flex; gap: 36px; color: var(--muted); font-size: 14px; }
 .nav-links a, .social-links a { transition: color .2s ease; }
 .nav-links a:hover, .social-links a:hover { color: var(--mint); }
@@ -43,17 +43,17 @@ h1 em, .footer h2 em { font-style: normal; color: var(--violet); }
 .button:hover { transform: translateY(-2px); }
 .button-primary { background: var(--text); color: var(--bg); border-color: var(--text); }
 .button-secondary { background: rgba(255,255,255,.02); }
-.hero-visual { position: relative; display: flex; justify-content: center; }
-.portrait-frame { width: min(390px, 100%); aspect-ratio: 4/5; position: relative; background: var(--surface); overflow: hidden; border: 1px solid var(--line); transform: rotate(2deg); }
-.portrait-frame::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 55%, rgba(9,11,18,.9)); }
-.portrait-frame img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.8) contrast(1.05); }
-.portrait-grid { position: absolute; inset: 0; z-index: 2; background-image: linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px); background-size: 44px 44px; }
-.portrait-label { position: absolute; z-index: 3; left: 28px; bottom: 25px; display: flex; flex-direction: column; gap: 7px; }
-.portrait-label span { color: var(--mint); text-transform: uppercase; letter-spacing: .14em; font-size: 10px; }
-.portrait-label strong { font-size: 14px; }
-.orbit { position: absolute; border: 1px solid rgba(128,108,255,.45); border-radius: 50%; z-index: -1; }
-.orbit-one { width: 480px; height: 480px; top: -40px; }
-.orbit-two { width: 350px; height: 350px; top: 25px; border-color: rgba(92,242,183,.2); }
+.hero-visual { position: relative; display: flex; justify-content: center; align-items: center; }
+.hero-visual-mobile { display: none; }
+.portrait-shell { width: min(430px, 100%); position: relative; display: flex; flex-direction: column; align-items: center; }
+.portrait-shell::after { content: ""; position: absolute; width: 88%; aspect-ratio: 1; top: 2%; border-radius: 50%; background: rgba(128,108,255,.16); filter: blur(58px); z-index: -1; }
+.portrait-frame { width: 100%; aspect-ratio: 1; position: relative; padding: 7px; overflow: hidden; background: linear-gradient(145deg, rgba(128,108,255,.75), rgba(92,242,183,.3) 55%, rgba(41,45,60,.8)); border-radius: 50%; box-shadow: 0 28px 80px rgba(0,0,0,.42); }
+.portrait-frame::after { content: ""; position: absolute; inset: 7px; border: 3px solid var(--bg); border-radius: 50%; pointer-events: none; }
+.portrait-frame img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 38%; border-radius: 50%; filter: saturate(.92) contrast(1.03); }
+.portrait-label { margin-top: 24px; padding: 11px 16px; display: inline-flex; flex-direction: row; align-items: center; gap: 10px; background: rgba(17,19,30,.72); border: 1px solid var(--line); border-radius: 999px; backdrop-filter: blur(12px); }
+.portrait-label span { display: inline-flex; align-items: center; color: var(--mint); text-transform: uppercase; letter-spacing: .13em; font-size: 9px; font-weight: 700; }
+.portrait-label span i { display: inline-block; width: 6px; height: 6px; margin-right: 7px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 4px rgba(92,242,183,.1); }
+.portrait-label strong { padding-left: 10px; border-left: 1px solid var(--line); font-size: 12px; font-weight: 500; }
 
 .proof { max-width: var(--max); margin: auto; display: grid; grid-template-columns: repeat(4,1fr); border: 1px solid var(--line); border-width: 1px 0; }
 .proof div { padding: 38px 24px; display: flex; flex-direction: column; gap: 8px; border-right: 1px solid var(--line); }
@@ -104,9 +104,9 @@ h1 em, .footer h2 em { font-style: normal; color: var(--violet); }
 
 @media (max-width: 900px) {
   .nav-links { display: none; }
-  .section { padding: 92px 24px; }
-  .hero { grid-template-columns: 1fr; padding-top: 90px; gap: 72px; }
-  .hero-visual { justify-content: flex-start; }
+  .section { padding: 88px 24px; }
+  .hero { grid-template-columns: 1fr; padding-top: 72px; gap: 44px; }
+  .hero-visual { justify-content: center; }
   .proof { grid-template-columns: repeat(2,1fr); }
   .proof div:nth-child(2) { border-right: 0; }
   .proof div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
@@ -122,13 +122,21 @@ h1 em, .footer h2 em { font-style: normal; color: var(--violet); }
 
 @media (max-width: 560px) {
   .nav { height: 72px; }
+  .brand img { width: 74px; }
   .nav-cta { font-size: 13px; }
-  .hero { min-height: auto; }
-  h1 { font-size: 54px; }
-  .hero-lede { font-size: 17px; }
-  .hero-actions { flex-direction: column; align-items: stretch; }
-  .portrait-frame { width: 88%; }
-  .orbit { display: none; }
+  .section { padding: 70px 20px; }
+  .hero { display: block; min-height: auto; padding-top: 50px; padding-bottom: 62px; }
+  .hero .eyebrow { margin-bottom: 18px; font-size: 10px; line-height: 1.5; }
+  .hero > .hero-visual { display: none; }
+  .hero-visual-mobile { display: flex; justify-content: flex-start; margin: 4px 0 26px; }
+  h1 { font-size: clamp(42px, 13vw, 50px); line-height: 1; margin-bottom: 22px; }
+  .hero-lede { font-size: 16px; line-height: 1.6; }
+  .hero-actions { flex-direction: column; align-items: stretch; margin-top: 28px; }
+  .portrait-shell { width: 156px; max-width: 44vw; }
+  .portrait-shell::after { width: 100%; filter: blur(42px); }
+  .portrait-frame { padding: 5px; box-shadow: 0 18px 50px rgba(0,0,0,.38); }
+  .portrait-frame::after { inset: 5px; border-width: 2px; }
+  .portrait-label { display: none; }
   .proof div { padding: 28px 20px; }
   .proof strong { font-size: 18px; }
   .section-intro h2, .about h2 { font-size: 43px; }

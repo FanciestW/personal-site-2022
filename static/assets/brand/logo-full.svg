@@ -1,0 +1,11 @@
+<svg width="280" height="64" viewBox="0 0 280 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">William Lin</title>
+  <desc id="desc">Terminal prompt, William Lin initials, status dot, cursor, and full name.</desc>
+  <path d="M8 17L22 32L8 47" stroke="#806CFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M39 14L46 49H55L62 27L69 49H78L85 14H76L72.5 37L66 14H58L51.5 37L48 14H39Z" fill="#F4F5FB"/>
+  <path d="M94 14V49H125V41H103V14H94Z" fill="#F4F5FB"/>
+  <circle cx="139" cy="45" r="5" fill="#5CF2B7"/>
+  <rect x="158" y="18" width="6" height="31" rx="3" fill="#5CF2B7"/>
+  <text x="180" y="29" fill="#F4F5FB" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">WILLIAM</text>
+  <text x="180" y="47" fill="#9DA3B5" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="4">LIN</text>
+</svg>
