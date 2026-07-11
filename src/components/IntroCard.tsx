@@ -33,8 +33,9 @@ const IntroCard = () => {
             Hello, I'm William
           </h1>
           <img
-            className="overflow-visible w-2/5 min-w-[300px] max-w-[400px] rounded-full border-2 border-white drop-shadow-xl"
+            className="aspect-square w-2/5 min-w-[300px] max-w-[400px] rounded-full border-2 border-white object-cover drop-shadow-xl"
             src={profileImage}
+            alt="Profile Picture"
           />
           <div className="flex flex-row items-center justify-center gap-x-8 w-fit z-10 text-blended-text mix-blend-difference">
             {LinkIconMapping.map(({ faIcon, url }) => (
