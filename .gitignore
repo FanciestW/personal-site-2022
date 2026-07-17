@@ -128,3 +128,12 @@ public
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# yarn v4
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
