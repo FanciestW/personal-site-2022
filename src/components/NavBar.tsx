@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "react-scroll";
 import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -8,7 +7,7 @@ interface ILink {
   text: string;
 }
 
-const links = [
+const links: ILink[] = [
   {
     href: "home",
     text: "Home",
@@ -28,20 +27,45 @@ const links = [
 ];
 
 const NavBar = () => {
+  const [activeHref, setActiveHref] = React.useState(links[0].href);
+
+  React.useEffect(() => {
+    const sections = links
+      .map(({ href }) => document.getElementById(href))
+      .filter((el): el is HTMLElement => el !== null);
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveHref(entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <div className="container fixed top-0 right-0 z-50 mix-blend-difference hidden sm:block">
         <div className="flex flex-row justify-end gap-x-12 px-10 py-8 z-0 uppercase text-base text-blended-text">
           {links.map(({ href, text }: ILink) => (
-            <Link
-              spy
-              hashSpy
-              activeClass="underline underline-offset-8"
-              className="hover:cursor-pointer"
-              to={href}
+            <a
+              key={href}
+              href={`#${href}`}
+              // Cancel the browser's instant jump; Lenis's own click listener
+              // still fires scrollTo for the smooth animation.
+              onClick={(event) => event.preventDefault()}
+              className={`hover:cursor-pointer ${
+                activeHref === href ? "underline underline-offset-8" : ""
+              }`}
             >
               {text}
-            </Link>
+            </a>
           ))}
         </div>
       </div>

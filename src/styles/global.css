@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Smoothing and section snapping are handled by Lenis (see
+   src/hooks/useSmoothScroll.ts), so no native scroll-behavior/scroll-snap here. */
 html {
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-  
   /* Hides scrollbar */
   -ms-overflow-style: none;
   scrollbar-width: none;
